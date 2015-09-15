@@ -1,6 +1,8 @@
 # 4.1.1.GA
-### 修改ti的sdk 让label支持行间距
-
+#### 目的 修改ti的sdk 让ti的label在ios中支持行间距
+#### 说明:
+	AttributedString的 AttributeNameParagraphStyle 属性 ti中未提供支持
+####具体使用：		
 属性：ATTRIBUTE_LINE_SPACING
 
 用法例子：
