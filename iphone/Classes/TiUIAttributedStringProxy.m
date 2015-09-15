@@ -84,9 +84,10 @@
         case AttributeNameLineSpacing:
             attrName = NSParagraphStyleAttributeName;
             NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
-            [paragraphStyle setLineSpacing:value];
+            [paragraphStyle setLineSpacing:[value floatValue]];
             attrValue = paragraphStyle;
             break;   
+
         case AttributeNameForegroundColor:
             attrName = NSForegroundColorAttributeName;
             attrValue = [[TiUtils colorValue:value] _color];
